@@ -11,6 +11,8 @@
 		0B2696A429767E3B0044A813 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2696A329767E3B0044A813 /* ContentView.swift */; };
 		0B2696A629767E3E0044A813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2696A529767E3E0044A813 /* Assets.xcassets */; };
 		0B2696A929767E3E0044A813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2696A829767E3E0044A813 /* Preview Assets.xcassets */; };
+		0B2696B029769CAC0044A813 /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2696AF29769CAC0044A813 /* AddStudentView.swift */; };
+		0B2696B229769DC90044A813 /* StudentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2696B129769DC80044A813 /* StudentData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0B2696A329767E3B0044A813 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B2696A529767E3E0044A813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B2696A829767E3E0044A813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B2696AF29769CAC0044A813 /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
+		0B2696B129769DC80044A813 /* StudentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				0B2696A129767E3B0044A813 /* DarkModeApp.swift */,
 				0B2696A329767E3B0044A813 /* ContentView.swift */,
+				0B2696AF29769CAC0044A813 /* AddStudentView.swift */,
+				0B2696B129769DC80044A813 /* StudentData.swift */,
 				0B2696A529767E3E0044A813 /* Assets.xcassets */,
 				0B2696A729767E3E0044A813 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B2696A429767E3B0044A813 /* ContentView.swift in Sources */,
+				0B2696B229769DC90044A813 /* StudentData.swift in Sources */,
+				0B2696B029769CAC0044A813 /* AddStudentView.swift in Sources */,
 				0B2696A229767E3B0044A813 /* DarkModeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,21 +1,39 @@
-//
-//  ContentView.swift
-//  DarkMode
-//
-//  Created by 渡邊魁優 on 2023/01/17.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @State var students: [StudentData] = [
+        StudentData(name: "Bob", age: 8),
+        StudentData(name: "Alice", age: 9)
+    ]
+    @State var newStudentName = ""
+    @State var newStudentAge = ""
+    @State var isAddView = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(students, id: \.id) { student in
+                    Text(student.name)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isAddView = true
+                    }) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
         }
-        .padding()
+        .sheet(isPresented: $isAddView) {
+            AddStudentView(newName: $newStudentName, newAge: $newStudentAge,
+                           isAddView: $isAddView ,add: addStudent)
+        }
+    }
+    func addStudent() {
+        let newStudent = StudentData(name: newStudentName, age: Int(newStudentAge) ?? 0)
+        self.students.append(newStudent)
     }
 }
 
